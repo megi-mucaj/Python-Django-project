@@ -1,0 +1,114 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+    <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
+
+
+
+<div class="container-sm single-product">
+    <div class="row">
+
+        {% for product in products %}
+        <div class="col-lg-6">
+            <img src="{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}" width="100%" id="ProductImg">
+
+            <div class="row small-img-row">
+
+                <div class="col-3 small-img-col">
+                    <img src="{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}"  width="100%" class="small-img">
+                </div>
+                <div class="col-3 small-img-col">
+                    <img src="{% static 'images/Brand-Missha-img/Missha-2-2.jpg' %}"  width="100%" class="small-img">
+                </div>
+                <div class="col-3 small-img-col">
+                    <img src="{% static 'images/Brand-Missha-img/Missha-3.jpg' %}"  width="100%" class="small-img">
+                </div>
+                <div class="col-3 small-img-col">
+                    <img src="{% static 'images/Brand-Missha-img/Missha-5-5.jpg' %}"  width="100%" class="small-img">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-6">
+            <p></p>
+            <h1> class="card-title">{{product.name}}</h1>
+            <p id="Buy-button" style="display: inline-block; float: left">
+                <a data-product="{{product.id}}" data-action="add" class="btn btn-outline update-cart" >
+                    Add to cart
+                </a>
+            </p>
+
+        {% endfor %}
+
+
+             <br>
+            <h3> | Product Details |</h3>
+
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+
+
+
+            {% for product in products %}
+              <div class="col-sm-3">
+                  <div class="card" id="border-color" data-aos="zoom-in">
+                        <img  class="thumbnail" src="{{product.imageURL}}">
+                      <div class="box-element product">
+                        <h5 class="card-title">{{product.name}}</h5>
+
+                        <p id="Buy-button" style="display: inline-block; float: left">
+                            <a data-product="{{product.id}}" data-action="add" class="btn btn-outline update-cart" >
+                                Add to cart
+                            </a>
+                        </p>
+
+                        <h4 style="display: inline-block; float: right">
+                            <strong>${{product.price | floatformat:2}}</strong>
+                        </h4>
+                      </div>
+                  </div>
+              </div>
+            {% endfor %}
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<!--    JS for product gallery    -->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+</script>
+
+{% endblock content %}

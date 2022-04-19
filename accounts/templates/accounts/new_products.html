@@ -1,0 +1,706 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/all_products.css' %}">
+
+  <script>
+    let img = document.querySelector('img');
+    let start = img.src;
+    let hover = img.getAttribute('data-hover'); //specified in img tag
+
+    img.onmouseover = () => { img.src = hover; }
+    img.onmouseout = () => { img.src = start; } //to revert back to start
+  </script>
+
+ <!-- Nav Bar 2 -->
+  <div  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm navbar-dark  fixed-bottom" id="navbar-color">
+        <div class="container-fluid text-dark">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#moisturiser">Moisturiser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#serume"> Serum </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#SPF">SPF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#masks">Masks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#spot-treatment">Spot Treatment</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <div id="moisturiser" class="container-fluid" style="padding:100px 20px;" data-aos="fade-down-right">
+    <h1>Moisturiser</h1>
+    <h4>Moisturizer creates a barrier between your skin and the climate, including cold, dry air that can further dry out skin.
+      Moisturizing also helps to rehydrate and enhance the capacity of the skin to hold water.
+    </h4>
+  </div>
+
+<br><br>
+ <div class="container text-black" >
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-3.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-6-6.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-6.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-6-6.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-7-7.jpeg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="row" >
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-3.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+              <img   src="{% static 'images/Brand-Purito-img/purito-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-1.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-1-1.jpg' %}'">
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+              <img   src="{% static 'images/Brand-Purito-img/purito-3-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-3.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-3-3.jpg' %}'">
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-5.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-1-1.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-7-7.jpeg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-1.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-1-1.jpg'' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-3-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-4.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-3-3.jpg'' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+ </div>
+
+ <div id="serume" class="container-fluid"  style="padding:100px 20px;" data-aos="fade-down-right">
+    <h1>Serume</h1>
+    <h4>A serum is a lightweight, quick-absorbing skin care product that contains a high concentration of active ingredients. Serums are made up of smaller molecules, which allows them to deliver active ingredients more effectively by penetrating deeper into the the skin.</h4>
+  </div>
+
+  <div class="container text-black" >
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-6-6.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-6.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-6-6.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+              <img   src="{% static 'images/Brand-Purito-img/purito-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-1.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-1-1.jpg' %}'">
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+
+  <div id="SPF" class="container-fluid  " style="padding:100px 20px;" data-aos="fade-down-right">
+    <h1>SPF</h1>
+    <h4>SPF is a measure of how much solar energy (UV radiation) is required to produce sunburn on protected skin (i.e., in the presence of sunscreen) relative to the amount of solar energy required to produce sunburn on unprotected skin. As the SPF value increases, sunburn protection increases.</h4>
+  </div>
+
+<div class="container text-black" >
+    <div class="row" >
+
+      <div class="col-md-3">
+
+        <div class="card" id="border-color" data-aos="zoom-in">
+            <a href="ProdName.html">
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-5-5.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-5.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-5-5.jpg' %}'" />
+            </a>
+            <div class="card-body " >
+              <h5 class="card-title">Pure Vitamin C Serum</h5>
+              <h6>Purito</h6>
+            </div>
+
+            <div class="card-body">
+              <p id="Buy-button"><a href="#" class="btn btn-outline  " > Add to cart </a></p>
+            </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-5.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-1-1.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="row" >
+
+      <div class="col-md-3">
+        <div class="card" id="border-color" data-aos="zoom-in">
+            <a href="ProdName.html">
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-1.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-1-1.jpg' %}'" />
+            </a>
+            <div class="card-body " >
+              <h5 class="card-title">Pure Vitamin C Serum</h5>
+              <h6>Purito</h6>
+            </div>
+
+            <div class="card-body">
+              <p id="Buy-button"><a href="#" class="btn btn-outline  " > Add to cart </a></p>
+            </div>
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-4-4.jpeg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-1.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-4-4.jpeg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-6.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-6-6.png' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-6.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div><br>
+</div>
+
+<div id="masks" class="container-fluid  " style="padding:100px 20px;" data-aos="fade-down-right">
+    <h1>Masks</h1>
+    <h4>Face masks are not magic, explains Dr. ... While face masks won't erase all your bad skin care habits after just one use, they can provide an extra boost to your routine. And if used properly, they can be an easy, effective and inexpensive way to give your skin a little extra TLC</h4>
+</div>
+<div class="container text-black" >
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-3.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-3-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-6-6.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-6.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-6-6.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-7-7.jpeg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Purito-img/purito-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Purito-img/purito-2-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+<div id="spot-treatment" class="container-fluid  " style="padding:100px 20px;" data-aos="fade-down-right">
+    <h1>Spot Treatment</h1>
+    <h4>Truth is, these types of remedies don't work, and they could really irritate your skin. Using spot treatments rather than a regular acne treatment medication: Spot treatments won't clear up your skin. They only work on individual pimples that have already formed and are visible.</h4>
+  </div>
+
+<div class="container text-black" >
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-5.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-1-1.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-4.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-7-7.jpeg' %}'" onmouseout="this.src='{% static 'images/Brand-Innisfree-img/Innisfree-3.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-1-1.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-1.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-1-1.jpg'' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Isntree-img/Isntree-3-3.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Isntree-img/Isntree-4.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Isntree-img/Isntree-3-3.jpg'' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card " id="border-color" data-aos="zoom-in">
+          <a href="ProdName.html" >
+            <img  src="{% static 'images/Brand-Missha-img/Missha-2.jpg' %}"  class="card-img-top" onmouseover="this.src='{% static 'images/Brand-Missha-img/Missha-2-2.jpg' %}'" onmouseout="this.src='{% static 'images/Brand-Missha-img/Missha-2.jpg' %}'" />
+          </a>
+          <div class="card-body border-0" >
+            <h5 class="card-title">Pure Vitamin C Serum</h5>
+            <h6>Purito</h6>
+          </div>
+          <div class="card-body">
+            <p id="Buy-button"><a href="#" class="btn btn-outline " > Add to cart </a></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+</div><br>
+
+
+
+{% endblock content %}

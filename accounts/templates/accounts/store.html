@@ -1,0 +1,35 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+    <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
+
+
+<div class="container text-black" >
+ <div class="row" >
+
+      {% for product in products %}
+      <div class="col-sm-3">
+          <div class="card" id="border-color" data-aos="zoom-in">
+               <a href="{% url 'product_details' %}">
+                   <img  class="thumbnail" src="{{product.imageURL}}">
+               </a>
+              <div class="box-element product">
+                <h5 class="card-title">{{product.name}}</h5>
+
+                <p id="Buy-button" style="display: inline-block; float: left">
+                    <a data-product="{{product.id}}" data-action="add" class="btn btn-outline update-cart" >
+                        Add to cart
+                    </a>
+                </p>
+
+                <h4 style="display: inline-block; float: right">
+                    <strong>${{product.price | floatformat:2}}</strong>
+                </h4>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
+
+ </div><br><br>
+</div>
+{% endblock content %}
